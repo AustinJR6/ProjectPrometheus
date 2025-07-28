@@ -1,7 +1,8 @@
 'use client'
 import { useState } from 'react'
+import type { ReactElement } from 'react'
 
-export default function Contact() {
+export default function Contact(): ReactElement {
   const [submitted, setSubmitted] = useState(false)
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {

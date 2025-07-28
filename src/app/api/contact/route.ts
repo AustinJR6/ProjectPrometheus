@@ -30,4 +30,5 @@ export async function POST(request: Request) {
     text: message,
   });
 
-  return N
+  return NextResponse.json({ success: true });
+}
