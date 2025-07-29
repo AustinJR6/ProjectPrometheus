@@ -17,18 +17,18 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "Project Prometheus: Elias 2026",
-  description: "For my sons. For the people. For the flame.",
+  title: "Project Prometheus",
+  description: "A movement platform for independent campaigns.",
   openGraph: {
-    title: "Project Prometheus: Elias 2026",
-    description: "For my sons. For the people. For the flame.",
+    title: "Project Prometheus",
+    description: "A movement platform for independent campaigns.",
     url: "https://example.com",
     siteName: "Project Prometheus",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Project Prometheus: Elias 2026",
-    description: "For my sons. For the people. For the flame.",
+    title: "Project Prometheus",
+    description: "A movement platform for independent campaigns.",
   },
 };
 
@@ -55,14 +55,12 @@ export default function RootLayout({
         <header className="bg-charcoal text-softwhite p-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold">Project Prometheus</Link>
           <nav className="space-x-4 flex items-center">
-            <a href="/about" className="hover:text-fireorange">About</a>
-            <a href="/platform" className="hover:text-fireorange">Platform</a>
-            <a href="/get-involved" className="hover:text-fireorange">Get Involved</a>
-            <button disabled title="Coming Soon after FEC registration" className="hover:text-fireorange cursor-not-allowed opacity-70">Donate</button>
+            <a href="/campaigns" className="hover:text-fireorange">Campaigns</a>
+            <a href="/candidate/create" className="hover:text-fireorange">Launch</a>
+            <a href="/manifesto" className="hover:text-fireorange">Manifesto</a>
             <a href="/blog" className="hover:text-fireorange">Blog</a>
-            <a href="/media-kit" className="hover:text-fireorange">Media Kit</a>
-            <a href="/quotes" className="hover:text-fireorange">Quotes</a>
             <a href="/contact" className="hover:text-fireorange">Contact</a>
+            <a href="/auth/login" className="hover:text-fireorange">Login</a>
             <ThemeToggle />
           </nav>
         </header>
@@ -79,7 +77,7 @@ export default function RootLayout({
             <a href="https://facebook.com" aria-label="Facebook" className="inline-block hover:text-fireorange">📘</a>
             <a href="https://instagram.com" aria-label="Instagram" className="inline-block hover:text-fireorange">📸</a>
           </div>
-          <p className="text-sm">© 2026 Elias Rittenhouse</p>
+          <p className="text-sm">© 2026 Project Prometheus</p>
         </footer>
       </body>
     </html>
