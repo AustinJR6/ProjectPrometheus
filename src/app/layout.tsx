@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Montserrat } from "next/font/google";
 import Link from "next/link";
 import type { ReactElement } from "react";
+import ThemeToggle from "../components/ThemeToggle";
 import "./global.css";
 
 const inter = Inter({
@@ -53,15 +54,16 @@ export default function RootLayout({
       <body className={`${inter.variable} ${montserrat.variable} antialiased`}>
         <header className="bg-charcoal text-softwhite p-4 flex justify-between items-center">
           <Link href="/" className="text-xl font-bold">Project Prometheus</Link>
-          <nav className="space-x-4">
+          <nav className="space-x-4 flex items-center">
             <a href="/about" className="hover:text-fireorange">About</a>
             <a href="/platform" className="hover:text-fireorange">Platform</a>
             <a href="/get-involved" className="hover:text-fireorange">Get Involved</a>
-            <a href="/donate" className="hover:text-fireorange">Donate</a>
+            <button disabled title="Coming Soon after FEC registration" className="hover:text-fireorange cursor-not-allowed opacity-70">Donate</button>
             <a href="/blog" className="hover:text-fireorange">Blog</a>
             <a href="/media-kit" className="hover:text-fireorange">Media Kit</a>
             <a href="/quotes" className="hover:text-fireorange">Quotes</a>
             <a href="/contact" className="hover:text-fireorange">Contact</a>
+            <ThemeToggle />
           </nav>
         </header>
         <main className="min-h-[calc(100vh-4rem)]">{children}</main>

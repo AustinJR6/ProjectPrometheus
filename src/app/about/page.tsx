@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import type { ReactElement } from 'react';
+
+export const metadata: Metadata = {
+  title: 'About - Project Prometheus',
+  description: 'Learn about Elias Rittenhouse and the mission of Project Prometheus.'
+};
 
 export default function About(): ReactElement {
   return (
