@@ -1,0 +1,11 @@
+[
+  {
+    "id": "elias",
+    "name": "Elias Rittenhouse",
+    "location": "Ohio, USA",
+    "bio": "Founding candidate dedicated to grassroots power and transparency.",
+    "photo": "https://via.placeholder.com/300x200",
+    "values": ["anti-corporate", "climate-first", "pro-labor"],
+    "donationUrl": "https://example.com/donate/elias"
+  }
+]
