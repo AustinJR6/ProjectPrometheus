@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import type { ReactElement } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Donate - Project Prometheus',
+  description: 'Support the campaign once FEC registration is complete.'
+};
 
 export default function Donate(): ReactElement {
   return (

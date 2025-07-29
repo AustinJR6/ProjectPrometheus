@@ -1,4 +1,12 @@
-export default function MediaKit() {
+import type { Metadata } from 'next'
+import type { ReactElement } from 'react'
+
+export const metadata: Metadata = {
+  title: 'Media Kit - Project Prometheus',
+  description: 'Official campaign logos and materials for press use.'
+}
+
+export default function MediaKit(): ReactElement {
   return (
     <div className="p-8 max-w-3xl mx-auto space-y-6">
       <h1 className="text-3xl font-bold mb-4">Media Kit</h1>

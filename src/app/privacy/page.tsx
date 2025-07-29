@@ -1,4 +1,10 @@
+import type { Metadata } from 'next';
 import type { ReactElement } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Privacy Policy - Project Prometheus',
+  description: 'How we handle your data on the campaign site.'
+};
 
 export default function Privacy(): ReactElement {
   return (

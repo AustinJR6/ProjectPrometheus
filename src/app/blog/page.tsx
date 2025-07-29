@@ -1,5 +1,11 @@
 import posts from '../../posts.json';
+import type { Metadata } from 'next';
 import type { ReactElement } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Blog - Project Prometheus',
+  description: 'Campaign updates and thoughts from Elias Rittenhouse.'
+};
 
 export default function Blog(): ReactElement {
   return (

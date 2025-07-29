@@ -8,7 +8,11 @@ export default function NewsletterSignup(): ReactElement {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Placeholder for Mailchimp integration
+    await fetch('/api/newsletter', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email }),
+    });
     setSubmitted(true);
   }
 

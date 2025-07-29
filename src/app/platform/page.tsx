@@ -21,7 +21,13 @@ const pillars = [
   },
 ];
 
+import type { Metadata } from 'next';
 import type { ReactElement } from 'react';
+
+export const metadata: Metadata = {
+  title: 'Platform - Project Prometheus',
+  description: 'Elias Rittenhouse\'s vision for anti-corruption, healthcare, tech, and transparency.'
+};
 
 export default function Platform(): ReactElement {
   return (
